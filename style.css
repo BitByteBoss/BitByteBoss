@@ -1,3 +1,56 @@
 body{
-  marg
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.befr, .afte{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  background-color: white;
+  z-index: 100;
+}
+.stripe{
+  background-color: #204444;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.div1, .div2, .div3, .div4, .div5{
+  position: relative;
+  background-color:#e4b040;
+  height: 30px;
+  width: 300px;
+  margin-bottom:17px;
+  margin-left: 45px ;
+}
+.div1{
+  margin-top: 45px;
+}
+.stripe::before{
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  margin-right: 20px;
+  z-index: 1;
+  transform: translate(-150px,0px);
+background-color: #204444;
+}
+.stripe::after{
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  background-color: white;
+  margin-right: 20px;
+  transform: translate(250px,0px);
+  background-color: #204444;
+}
+.aftr{
+  z-index: 100;
 }
